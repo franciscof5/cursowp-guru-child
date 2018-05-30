@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Guru WordPress Theme\n"
 "POT-Creation-Date: 2016-10-05 14:52+0530\n"
-"PO-Revision-Date: 2018-05-30 07:57-0300\n"
+"PO-Revision-Date: 2018-05-30 08:39-0300\n"
 "Last-Translator: Ramamoorthi <ram@iamdesigning.com>\n"
 "Language-Team: designthemes <ram@iamdesigning.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../archive.php:11
 msgid "Category Archives of : "
-msgstr "Arquivo de : "
+msgstr "Arquivo de "
 
 #: ../archive.php:12
 msgid "Daily Archives of : "
@@ -819,7 +819,7 @@ msgstr ""
 
 #: ../framework/register_public.php:1003
 msgid "Archive for Category: "
-msgstr ""
+msgstr "Arquivo de "
 
 #: ../framework/register_public.php:1008
 msgid "Archive for Author: "
