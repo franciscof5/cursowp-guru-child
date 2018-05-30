@@ -8,4 +8,8 @@ function redirect_nonloggedin_users($current_uri, $redirect_to) {
 
 add_filter('pbp_redirect_login_page', 'redirect_nonloggedin_users', 10, 2);
 
+function wpdocs_child_theme_setup() {
+    load_child_theme_textdomain( 'iamd_text_domain', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'wpdocs_child_theme_setup' );
 ?>
