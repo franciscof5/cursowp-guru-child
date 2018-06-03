@@ -16,8 +16,31 @@ http://www.wedesignthemes.com/themes/dt-guru/
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+.logo-title h1 a {
+	color: #2c2c2c !important;
+}
+.logo-title h2, site-description {
+	color: #9c9c9c !important;
+}
+
+.content {
+	padding: 20px 0 !important;
+}
+.course-container {
+	margin-bottom: 20px;
+}
+.type-page .type-course {
+	padding: 20px 0;
+}
 .type-course {
-	padding: 80px 40px;
+	padding: 0px 45px 30px;	
+	clear: both;
+}
+.type-lesson {
+	margin-bottom: 20px;
+}
+.lesson-meta span {
+	margin-right: 20px;
 }
 .entry-thumb img {
 	/*width: 100%;*/
