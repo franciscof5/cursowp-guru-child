@@ -19,3 +19,40 @@ http://www.wedesignthemes.com/themes/dt-guru/
 .type-course {
 	padding: 80px 40px;
 }
+.entry-thumb img {
+	/*width: 100%;*/
+	height: 150px;
+	max-height: 150px;
+	display: block;
+	width: 100vw;
+	/*height: 40vh;*/
+	object-fit: cover;
+	/*background-size: cover;
+	background-position: center center;*/
+}
+
+/*RESPONSIVE YOUTUBE**/
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;
+}
