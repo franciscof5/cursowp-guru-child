@@ -32,7 +32,7 @@ http://www.wedesignthemes.com/themes/dt-guru/
 .type-page .type-course {
 	padding: 20px 0;
 }
-.type-course {
+.type-course, .type-lesson {
 	padding: 0px 45px 30px;	
 	clear: both;
 }
@@ -41,6 +41,9 @@ http://www.wedesignthemes.com/themes/dt-guru/
 }
 .lesson-meta span {
 	margin-right: 20px;
+}
+.lesson-meta .complete {
+	font-weight: 600;
 }
 .entry-thumb img {
 	/*width: 100%;*/
@@ -53,7 +56,9 @@ http://www.wedesignthemes.com/themes/dt-guru/
 	/*background-size: cover;
 	background-position: center center;*/
 }
-
+.post-entries {
+	padding: 20px 40px;
+}
 /*RESPONSIVE YOUTUBE**/
 .video-container {
 	position: relative;
