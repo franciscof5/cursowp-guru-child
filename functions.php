@@ -15,7 +15,7 @@ add_action( 'after_setup_theme', 'wpdocs_child_theme_setup' );
 
 function my_home_category( $query ) {
  if ( $query->is_home() && $query->is_main_query() ) {
- $query->set( 'cat', '28');
+ 	$query->set( 'cat', '28');
  }
 }
 add_action( 'pre_get_posts', 'my_home_category' );
