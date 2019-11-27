@@ -2,8 +2,10 @@
 		
 		//BANNER f5sites
 		if(is_home()) {
-			echo "<br style='clear:both;'>";
-			echo do_shortcode('[rev_slider alias="homepage"]');
+			echo "<br style='clear:both;'>"; ?>
+			
+			<?php
+			#echo do_shortcode('[rev_slider alias="homepage"]');
 		}
 		
 	  //GETTING META VALUES...
