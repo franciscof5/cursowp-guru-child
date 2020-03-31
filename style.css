@@ -14,13 +14,39 @@ http://www.wedesignthemes.com/themes/dt-guru/
 */
 @import url("../guru/style.css");
 
+@font-face {
+    font-family: 'lobster';
+    src: url('fonts/lobster/lobster_1.3-webfont.eot');
+    src: url('fonts/lobster/lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lobster/lobster_1.3-webfont.woff2') format('woff2'),
+         url('fonts/lobster/lobster_1.3-webfont.woff') format('woff'),
+         url('fonts/lobster/lobster_1.3-webfont.ttf') format('truetype'),
+         url('fonts/lobster/lobster_1.3-webfont.svg#lobster_1.3regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 .logo-title h1 a {
-	color: #2c2c2c !important;
-}
-.logo-title h2, site-description {
+	/*color: #2c2c2c !important;*/
 	color: #9c9c9c !important;
+}
+.logo-title h2, #site-description {
+	/*color: #355c7d !important;*/
+}
+#site-title a {
+	color: #d95b43 !important;
+	font-family: lobster;
+	font-size: 3rem;
+	text-align: center;
+}
+#site-description {
+	color: #9c9c9c !important;
+	font-size: 18px !important;
+	font-weight: 600;
+	text-align: center;
 }
 
 .content {
