@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <?php #echo "<h1>PARABENS</h1><h2>Você acabou de criar a principal ferramenta da sua vida:<br><br><br> <strong>bin-server-git-management-shell-2020</strong>";die;
  get_header();
+=======
+<?php get_header();
+>>>>>>> be1cfd2636d70dfad54471842a61acee824dd9df
 
 	while(have_posts()): the_post();
 		
@@ -101,4 +105,8 @@
       </div>
       <!-- content ends here -->
 
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+<?php get_footer(); ?>
+>>>>>>> be1cfd2636d70dfad54471842a61acee824dd9df
