@@ -101,9 +101,23 @@
                               </div>
                                   
                               <div class="entry-detail">
-                                  <h2><?php the_title(); ?></h2><?php
+                                  <h2><?php the_title(); ?></h2>
+                                  <?php 
+                                      $plugins = get_post_meta($post->ID, 'plugin-related', false);
+                                      echo "<blockquote>
+                                          Recurso relacionado: ";
+                                      if(is_array($plugins)) {
+                                        foreach ($plugins as $plugin) {
+                                          echo "<a href='https://source.f5sites.com/".$plugin."'>".$plugin."</a>, ";
+                                        }
+                                      } else {
+                                        echo "<a href='https://source.f5sites.com/".$plugin."'>".$plugin."</a>";
+                                      }
+                                      echo "</blockquote>";
+                                  ?>
+                                  <?php
                                   //PAGE TOP CODE...
-								  global $dt_allowed_html_tags;
+								                  global $dt_allowed_html_tags;
                                   if(dt_theme_option('integration', 'enable-single-post-top-code') != '') echo wp_kses(stripslashes(dt_theme_option('integration', 'single-post-top-code')), $dt_allowed_html_tags);
                                   the_content();
                                   wp_link_pages(array('before' => '<div class="page-link"><strong>'.__('Pages:', 'iamd_text_domain').'</strong> ', 'after' => '</div>', 'next_or_number' => 'number'));
