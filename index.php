@@ -27,7 +27,7 @@
               <section class="<?php echo esc_attr($page_layout); ?>" id="primary">
                   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php
                       //PERFORMING ARCHIVE LAYOUT...
-                      get_template_part('includes/archive-post-layout'); ?>
+                      get_template_part('includes/cursowp-simple-archive-post-layout'); ?>
                   </article>
               </section>
               <?php if($page_layout != 'content-full-width' && $page_layout == 'with-left-sidebar'): ?>
