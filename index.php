@@ -24,17 +24,22 @@
 	  <!-- content starts here -->
 	  <div class="content">
           <div class="container">
-              <section class="<?php echo esc_attr($page_layout); ?>" id="primary">
+              <section id="primary">
                   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php
                       //PERFORMING ARCHIVE LAYOUT...
                       get_template_part('includes/cursowp-simple-archive-post-layout'); ?>
                   </article>
+
               </section>
-              <?php if($page_layout != 'content-full-width' && $page_layout == 'with-left-sidebar'): ?>
-                  <section class="left-sidebar" id="secondary"><?php get_sidebar(); ?></section>
-              <?php elseif($page_layout != 'content-full-width' && $page_layout == 'with-right-sidebar'): ?>    
-                  <section id="secondary"><?php get_sidebar(); ?></section>
-              <?php endif; ?>
+              <section id="secondary">
+                  	<?php #get_sidebar(); ?>
+                  	<?php 
+					if(function_exists("smartlang_recent_posts_georefer_widget")) {
+						smartlang_recent_posts_georefer_widget();
+					}
+					#the_widget("Recent_Posts_Widget_Extended", "limit=20"); 
+					?>	
+                  </section>
           </div>
       </div>
       <!-- content ends here -->
